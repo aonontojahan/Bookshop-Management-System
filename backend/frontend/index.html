@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Shop Management</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Book Shop Management System</h2>
+
+    <!-- Create Book Form -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5>Add New Book</h5>
+            <div class="row g-2">
+                <div class="col-md-3">
+                    <input type="text" id="name" class="form-control" placeholder="Book Name">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="author" class="form-control" placeholder="Author">
+                </div>
+                <div class="col-md-2">
+                    <input type="number" id="pages" class="form-control" placeholder="Pages">
+                </div>
+                <div class="col-md-2">
+                    <input type="number" step="0.01" id="price" class="form-control" placeholder="Price">
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary w-100" onclick="createBook()">Create Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Books Table -->
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bookTable">
+            <!-- Books will appear here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
