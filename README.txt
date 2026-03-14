@@ -8,7 +8,7 @@ It supports full CRUD (Create, Read, Update, Delete) operations and includes a b
 HTML + Bootstrap frontend integrated with the backend.
 
 The goal of this project is to demonstrate backend–frontend integration,
-database operations using SQLAlchemy ORM, and REST API development using FastAPI..........
+database operations using SQLAlchemy ORM, and REST API development using FastAPI...........
 
 --------------------------------------------------
 
